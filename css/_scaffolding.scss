@@ -1,0 +1,15 @@
+html{
+    font-size: 62.5%;
+      margin: 0;
+      padding:0;
+  }
+  
+  body{
+    font-size: 1.6rem;
+  } 
+
+  .wrap{
+    // width:76.5%;
+    width:calc(974.5 / 1280 * 100%);
+    margin: 0 auto;
+  }

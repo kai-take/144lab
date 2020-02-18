@@ -1,0 +1,112 @@
+/*---color---*//*cssを繰り返し使う為に*/
+.red{
+    color: #D4004E;
+}
+
+.bg_red{
+    background-color:  #D4004E;
+}
+
+.white{
+  color: #FFFFFF;
+}
+
+.bg_white{
+  background-color: #FFFFFF;
+}
+
+.black{
+  color: #333333;
+}
+
+.yellow{
+  color:#E5A31C;
+}
+
+.bd_yellow{
+  color: #E5A31C;
+}
+/*---End_color---*/
+
+
+
+/*----contents----*/ /*cssを繰り返し使う為に*/
+
+/*------ナビゲーション------*/
+.flex{
+  display: flex;
+}
+
+.li{
+  list-style: none;
+  display: inline;
+}
+
+/*------ボタン------*/
+.btn{
+  width: 157px;
+  padding-top:8.4px ;
+  padding-bottom: 8.4px;
+  border-style: none;
+  p{
+    font-family:'Noto Sans CJK JP' ;
+    font-weight: bold;
+    font-size: 1.3rem;
+    position: relative;
+    margin-right: 8px;
+    // display: flex;
+  }
+
+  p::after{
+    content: '';
+    display: inline-block;
+    position: absolute;
+    bottom:4px;
+    left:130px;
+    width: 7px;
+    height: 7px;
+    vertical-align: middle;
+    border: #ffffff 2px solid;
+    border-top: none;
+    border-left: none;
+    transform: rotate(-45deg);
+  }
+}
+
+
+
+
+
+
+
+/*------文字------*/
+.a{
+  display: block;
+  color: #000;
+  text-decoration: none;
+}
+
+.text{
+  word-wrap: break-word;
+}
+
+.NSCP  /*Noto Sans CJK JP*/{
+  font-family:'Noto Sans CJK JP' ;
+}
+
+.h3{
+  font-family:'Noto Sans CJK JP' ;
+  font-size:4.3rem ;
+  font-weight: 600;
+  color: #333333;
+}
+
+// .h3::before{
+//   widows: 8px; ;
+//   height:9px ;
+//   background-color: #D4004E;
+//   content:'';
+//   display: block;
+// }
+
+/*---End contents---*/
