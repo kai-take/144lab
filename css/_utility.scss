@@ -26,11 +26,9 @@
 .bd_yellow{
   color: #E5A31C;
 }
-/*---End_color---*/
+/*---/color---*/
 
-
-
-/*----contents----*/ /*cssを繰り返し使う為に*/
+/*----contents----*/ /*cssを繰り返し使う為*/
 
 /*------ナビゲーション------*/
 .flex{
@@ -73,12 +71,6 @@
   }
 }
 
-
-
-
-
-
-
 /*------文字------*/
 .a{
   display: block;
@@ -100,13 +92,4 @@
   font-weight: 600;
   color: #333333;
 }
-
-// .h3::before{
-//   widows: 8px; ;
-//   height:9px ;
-//   background-color: #D4004E;
-//   content:'';
-//   display: block;
-// }
-
-/*---End contents---*/
+/*---/contents---*/
