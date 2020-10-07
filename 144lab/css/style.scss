@@ -1,0 +1,187 @@
+@import 'normalize'; //リセットcss//
+@import 'utility';   //繰り返し使うスタイル//
+@import 'scaffolding'; //基本設定//
+
+/*---------------------------------
+  My css
+---------------------------------*/
+
+.header{
+  background-color: #F2F3F7;
+  width: 100%;
+  min-height: 799px;
+  // max-height: ;
+  height: 100vh;/*フルスクリーン*/
+  position: relative;
+  margin-bottom: 97px;
+}
+
+.main_img{
+  background-image:url(../img/main.png);
+  background-repeat: no-repeat;
+  background-position:center -176px;
+  background-size:cover;
+  vertical-align: center;
+  background-color: #F2F3F7;
+  height: 100%;
+  width: 100%;
+  margin:auto;
+
+
+  .global_nav{
+    background-color:#FFFFFF;
+    width: 76.1%;
+    justify-content: space-around;
+    // align-items:center;/*上下中央寄せ*/
+    padding-top: 22px;
+    padding-bottom: 22px;
+    position: absolute;
+    top: 7.3%;
+    left: calc(150 / 1280 *100%);
+    filter: drop-shadow(4px 4px 1px rgba(0,0,0,0.16));
+  }
+
+  .nav{
+    width:calc(610 / 974.5 *100%);
+    position: relative;
+    margin-top: 5px;/*リストの微調整*/
+
+    .flex{
+      justify-content: space-between;
+    }
+
+   .li::after/*liの間の縦線*/{   
+    content: '';
+    display: inline-block;
+    background:#000000;
+    height: 8.33px;
+    width:1px;
+    position: absolute;
+    top:0;
+    left:0;
+   }
+
+   .border1::after/*それぞれの縦線に指定*/{
+     top:6px ;
+     left:calc(102.5 / 610 *100%);
+   }
+
+   .border2::after{
+     top: 6px;
+     left: calc(248.5 / 610 *100%);
+   }
+
+   .border3::after{
+     top:6px;
+     left:calc(493.5 / 610 *100%);
+   }
+
+
+    .li:last-child:after/*打ち消し*/{
+      display: none;
+    }
+
+    .a/*liの文字*/{
+      font-family: 'Noto Sans CJK JP';
+      font-size: 1.4rem;
+      font-weight: 500;
+      // letter-spacing: 0.4px;
+      position: relative;
+    }
+
+    .a:after/*ナビゲーションの下の文字*/{
+      font-family: 'Noto Sans CJK JP';
+      font-size: 1rem;
+      font-weight:500;
+      color: #777777;
+      display: block;
+      position: absolute;
+      top:110%;
+      white-space: nowrap;/*改行させない*/
+    }
+
+    .a1::after{
+      content: '企業情報';
+      left: 3%; /*それぞれ下文字の微調整*/
+    }
+
+    .a2::after{
+      content: 'ニュース';
+    }
+
+    .a3::after{
+      content: 'サービス＆製品情報';
+      left: 15%;
+    }
+
+    .a4::after{
+      content: 'お問い合わせ';
+      left:2%;
+    }
+  }
+
+  .h2{
+    font-family:'ITC Avant Garde Gothic'; 
+    font-size: 7.6rem;
+    font-weight:500;
+    color: #D4004E;
+    position: absolute;
+    top: 26.22%;
+    left: 11.71%;
+  }
+
+  .sub_title{
+    font-family: 'Noto Sans CJK JP';
+    font-size: 1.6rem;
+    font-weight: bold;
+    letter-spacing: 6px;
+    position: absolute;
+    top: 63.2%;
+    left:11.71%;
+  }
+
+  .sub_title::before{    /*横棒*/
+    content: '-';
+    color: #D4004E;
+    margin-right: 15px;
+  }
+
+  .sub_title::after{    /*横棒*/
+    content: '-';
+    color: #D4004E;
+    margin-left: 14px;
+  }
+
+  .sub_title2{
+    font-family: 'Noto Sans CJK JP';
+    font-size: 1.2rem;
+    font-weight: bold;
+    letter-spacing:5px;
+    position: absolute;
+    top: 66.9%;
+    left:12.1%; 
+    padding-left: 21px;
+  }
+
+  .scroll{
+    font-size: 1.2rem;
+    font-weight: 500;
+    letter-spacing:0.3px ;
+    position: absolute;
+    top: 92.3%;
+    left:48.2% ;
+  }
+
+  .scroll_img{
+    position: absolute;
+    top: 95.4%;
+    left: 49.7%;
+  }
+
+}
+
+@import 'about';
+@import 'service';
+@import 'news';
+@import 'footer';
+
