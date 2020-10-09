@@ -49,6 +49,27 @@
       .li:last-child:after/*打ち消し*/{
         display: none;
       }
+
+      /*
+      表示崩れ防止
+      ———————————*/
+      @media (max-width:560px) {
+        .NSCP {
+          margin-right: 40px;
+        }
+        .li::after {
+          display: none;
+        }
+      }
+    }
+
+    /*
+    sp
+    ———————————*/
+    @media (max-width:560px) {
+      .nav {
+        width: 80%;
+      }
     }
   
     .share{

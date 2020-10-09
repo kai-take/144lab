@@ -101,4 +101,21 @@
     }
   }
 
+  /*
+  sp
+  ———————————*/
+  @media (max-width:560px) {
+    .time{
+      margin-right: 2%;
+    }
+
+    .mg2{
+      width: 40%;
+    }
+
+    .article_container::after/*矢印*/{
+      right: 60px;
+    }
+  }
+
 }

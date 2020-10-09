@@ -201,6 +201,15 @@ tablet
   }
 }
 
+/*
+sp
+———————————*/
+@media (max-width: 560px) {
+  .h3 {
+    font-size: 3.6rem;
+  }
+}
+
 /*---End contents---*/
 html {
   font-size: 62.5%;
@@ -265,7 +274,7 @@ body {
 
 @media (max-width: 720px) {
   .main_img .global_nav {
-    min-width: 540px;
+    min-width: 480px;
   }
 }
 
@@ -438,7 +447,7 @@ body {
 }
 
 /*
-表示崩れ防止
+tablet
 ———————————*/
 @media (max-width: 720px) {
   .main_img {
@@ -494,6 +503,10 @@ body {
   width: 100%;
   position: relative;
   margin-bottom: 109px;
+  /*
+
+  表示崩れ防止
+  ———————————*/
 }
 
 .service .h3 {
@@ -561,10 +574,25 @@ body {
           flex-flow: row-reverse;
 }
 
+@media (max-width: 720px) {
+  .service .service_img {
+    width: 48%;
+  }
+  .service .dd {
+    width: 48%;
+  }
+}
+
 .news {
   margin-bottom: 97px;
   padding-left: 24px;
   text-align: center;
+  /*
+  表示崩れ防止
+  ———————————*/
+  /*
+  sp
+  ———————————*/
 }
 
 .news .news_container {
@@ -633,6 +661,7 @@ body {
   font-size: 1.2rem;
   letter-spacing: 0.2px;
   font-weight: bold;
+  margin-right: 10px;
 }
 
 .news .time {
@@ -658,12 +687,33 @@ body {
   margin-right: 25px;
 }
 
+@media (max-width: 1024px) {
+  .news .time::after {
+    display: none;
+  }
+}
+
+@media (max-width: 560px) {
+  .news .time {
+    margin-right: 2%;
+  }
+  .news .mg2 {
+    width: 40%;
+  }
+  .news .article_container::after {
+    right: 60px;
+  }
+}
+
 .footer {
   background-color: #333333;
   text-align: center;
   padding-top: 32px;
   padding-bottom: 28px;
   width: 100%;
+  /*
+    sp
+    ———————————*/
 }
 
 .footer .a {
@@ -678,12 +728,15 @@ body {
 
 .footer .nav {
   margin-bottom: 24px;
-  width: calc(437 / 1280 *100%);
+  width: 100%;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin: auto;
   margin-bottom: 26px;
+  /*
+      表示崩れ防止
+      ———————————*/
 }
 
 .footer .nav .NSCP {
@@ -715,6 +768,21 @@ body {
 
 .footer .nav .li:last-child:after {
   display: none;
+}
+
+@media (max-width: 560px) {
+  .footer .nav .NSCP {
+    margin-right: 40px;
+  }
+  .footer .nav .li::after {
+    display: none;
+  }
+}
+
+@media (max-width: 560px) {
+  .footer .nav {
+    width: 80%;
+  }
 }
 
 .footer .share {
