@@ -59,6 +59,19 @@
   .reverse{
     flex-flow: row-reverse;
   }
+  /*
+
+  表示崩れ防止
+  ———————————*/
+  @media (max-width:720px) {
+    .service_img {
+      width: 48%;
+    }
+    
+    .dd{
+      width: 48%;
+    }
+  }
 }
 
   
