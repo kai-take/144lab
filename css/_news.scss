@@ -94,5 +94,13 @@
     margin-right: 25px;
   }
 
+  /*
+  表示崩れ防止
+  ———————————*/
+  @media (max-width:1024px) {
+    .time::after/*縦線*/{
+      display: none;
+    }
+  }
 
 }
