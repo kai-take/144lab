@@ -1,42 +1,43 @@
 .about{
-    padding-left: 28px;
-    margin-bottom: 137px;
+  padding-left: 28px;
+  margin-bottom: 137px;
   
-    .text_box{
-      background-color: #F2F3F7;
-      position: relative;
-      padding: 66px 0;
-    }
-
-    .text_box2/*中央寄せ*/{
-      width: 87.3%;
-      margin:0 auto;
-    }
   
-    .h3{
-      position: absolute;
-      top: -0.5em;/*1文字の半分の高さ*/
-      left: 6px;
-    }
-  
-    .h3::before/*縦長の長方形*/{
-      content:url(../img/box.png);
-      position: absolute;
-      left: -31px;
-    }
-    
-    .text{
-      font-size: 1.7rem;
-      font-weight: 500;
-      // letter-spacing:0.34px;
-      line-height: 2.3;
-      word-wrap: break-word;
-    }
-  
-    .btn{
-      position: absolute;  
-      bottom: -19px;
-      left: 50%;
-      transform: translateX(-50%)/*こいつが肝*/
-    }
+  .text_box{
+    background-color: #F2F3F7;
+    position: relative;
+    padding: 66px 0;
   }
+
+  .text_box2/*中央寄せ*/{
+    width: 87.3%;
+    margin:0 auto;
+  }
+
+  .h3{
+    position: absolute;
+    top: -0.5em;/*1文字の半分の高さ*/
+    left: 6px;
+  }
+
+  .h3::before/*縦長の長方形*/{
+    content:url(../img/box.png);
+    position: absolute;
+    left: -31px;
+  }
+
+  .text{
+    font-size: 1.7rem;
+    font-weight: 500;
+    // letter-spacing:0.34px;
+    line-height: 2.3;
+    word-wrap: break-word;
+  }
+
+  .btn{
+    position: absolute;  
+    bottom: -19px;
+    left: 50%;
+    transform: translateX(-50%)/*こいつが肝*/
+  }
+}

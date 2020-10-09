@@ -10,7 +10,8 @@
   background-color: #F2F3F7;
   width: 100%;
   min-height: 799px;
-  height: 100vh;
+  // max-height: ;
+  height: 100vh;/*フルスクリーン*/
   position: relative;
   margin-bottom: 97px;
 }
@@ -18,30 +19,43 @@
 .main_img{
   background-image:url(../img/main.png);
   background-repeat: no-repeat;
-  background-position:center -176px;//使いたい画像の切り取り//
+  background-position:center -176px;
   background-size:cover;
+  vertical-align: center;
   background-color: #F2F3F7;
   height: 100%;
   width: 100%;
   margin:auto;
 
-
   .global_nav{
-    background-color:#FFFFFF;
+    background-color: #FFFFFF;
     width: 76.1%;
+    min-width: 700px;
+    -ms-flex-pack: distribute;
     justify-content: space-around;
-    align-items:center;/*上下中央寄せ*/
     padding-top: 22px;
     padding-bottom: 22px;
     position: absolute;
     top: 7.3%;
-    left: calc(150 / 1280 *100%);
-    filter: drop-shadow(4px 4px 1px rgba(0,0,0,0.16));
+    left: 50%;
+    transform: translateX(-50%);
+    -webkit-filter: drop-shadow(4px 4px 1px rgba(0, 0, 0, 0.16));
+    filter: drop-shadow(4px 4px 1px rgba(0, 0, 0, 0.16));
   }
+  
+    /*
+    表示崩れ防止
+    ———————————*/
+    @media (max-width:720px) {
+        .global_nav {
+            min-width: 540px;
+        }
+    }
 
   .nav{
     width:calc(610 / 974.5 *100%);
     position: relative;
+    margin-top: 5px;/*リストの微調整*/
 
     .flex{
       justify-content: space-between;
@@ -115,7 +129,30 @@
       content: 'お問い合わせ';
       left:2%;
     }
-  }
+
+    /*
+    表示崩れ防止
+    ———————————*/
+    @media (max-width:1024px) {
+        .li::after/*liの間の縦線*/{   
+            display: none;
+        }
+        .a {
+            font-size: 1.2rem;
+        }
+    }
+    /*
+    tablet
+    ———————————*/
+    @media (max-width:720px) {
+        .li::after/*liの間の縦線*/{   
+            display: none;
+        }
+        .a {
+            font-size: 1.2rem;
+        }
+    }
+}
 
   .h2{
     font-family:'ITC Avant Garde Gothic'; 
@@ -166,7 +203,8 @@
     letter-spacing:0.3px ;
     position: absolute;
     top: 92.3%;
-    left:48.2% ;
+    left: 50%;
+    transform: translateX(-50%);
   }
 
   .scroll_img{
@@ -174,8 +212,16 @@
     top: 95.4%;
     left: 49.7%;
   }
-}
 
+}
+/*
+表示崩れ防止
+———————————*/
+@media (max-width:720px) {
+    .main_img {
+        background-position: center;
+    }
+}
 @import 'about';
 @import 'service';
 @import 'news';

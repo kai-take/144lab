@@ -3,12 +3,14 @@ html{
       margin: 0;
       padding:0;
   }
-
+  
   body{
     font-size: 1.6rem;
+    font-family: 'Noto Sans Japanese',"游ゴシック", "YuGothic", "ヒラギノ角ゴ ProN", "Hiragino Kaku Gothic ProN", "メイリオ", "Meiryo", "Osaka", 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
   } 
 
   .wrap{
+    // width:76.5%;
     width:calc(974.5 / 1280 * 100%);
     margin: 0 auto;
   }
