@@ -101,12 +101,13 @@
   color: #333333;
 }
 
-// .h3::before{
-//   widows: 8px; ;
-//   height:9px ;
-//   background-color: #D4004E;
-//   content:'';
-//   display: block;
-// }
+/*
+tablet
+———————————*/
+@media (max-width:720px) {
+  .h3 {
+    font-size: 3.8rem;
+  }
+}
 
 /*---End contents---*/

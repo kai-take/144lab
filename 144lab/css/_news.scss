@@ -37,7 +37,21 @@
     .article_container{
       align-items: center;
       position: relative;
-
+      padding: 0 20px;
+    }
+    .article_container::after/*矢印*/{
+      content: '';
+      display: inline-block;
+      position: absolute;
+      top: 50%;
+      right:calc(29.1 / 954 *100%);
+      width: 7px;
+      height: 7px;
+      vertical-align: middle;
+      border:#707070 2px solid;
+      border-top: none;
+      border-left: none;
+      transform: rotate(-45deg) translateY(-50%);
     }
   
     .border{
@@ -49,7 +63,6 @@
       padding-bottom: 5px; 
     }
 
-  
     .news_text{
       font-family: 'Noto Sans CJK JP';
       font-size: 1.2rem;
@@ -75,21 +88,6 @@
       white-space: nowrap;
       text-overflow: ellipsis;
       overflow: hidden;
-    }
-    
-    .mg2::after/*矢印*/{
-      content: '';
-      display: inline-block;
-      position: absolute;
-      bottom:8px;
-      right:calc(29.1 / 954 *100%);
-      width: 7px;
-      height: 7px;
-      vertical-align: middle;
-      border:#707070 2px solid;
-      border-top: none;
-      border-left: none;
-      transform: rotate(-45deg);
     }
 
     .btn{
