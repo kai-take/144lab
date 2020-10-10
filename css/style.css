@@ -18,6 +18,7 @@ html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pr
 
 body {
   line-height: 1;
+  overflow-x: hidden;
 }
 
 article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
@@ -577,6 +578,7 @@ tablet
 @media (max-width: 720px) {
   .service .service_img {
     width: 48%;
+    text-align: center;
   }
   .service .dd {
     width: 48%;
@@ -701,7 +703,7 @@ tablet
     width: 40%;
   }
   .news .article_container::after {
-    right: 60px;
+    right: 50px;
   }
 }
 
