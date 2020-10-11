@@ -252,8 +252,11 @@ body {
   width: 100%;
   margin: auto;
   /*
-    表示崩れ防止
-    ———————————*/
+  表示崩れ防止
+  ———————————*/
+  /*
+  tablet
+  ———————————*/
 }
 
 .main_img .global_nav {
@@ -275,8 +278,24 @@ body {
 
 @media (max-width: 720px) {
   .main_img .global_nav {
-    min-width: 480px;
+    min-width: 450px;
+    padding: 22px;
   }
+}
+
+.main_img .logo {
+  width: 32%;
+}
+
+.main_img .logo > a {
+  display: block;
+  width: 100%;
+}
+
+.main_img .logo > a > img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 .main_img .nav {
@@ -381,7 +400,16 @@ body {
     display: none;
   }
   .main_img .nav .a {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+  }
+  .main_img .nav .a:after {
+    font-size: 8px;
+  }
+}
+
+@media (max-width: 720px) {
+  .main_img .nav {
+    width: 64%;
   }
 }
 

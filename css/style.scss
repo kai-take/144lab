@@ -43,14 +43,30 @@
     filter: drop-shadow(4px 4px 1px rgba(0, 0, 0, 0.16));
   }
   
-    /*
-    表示崩れ防止
-    ———————————*/
-    @media (max-width:720px) {
-        .global_nav {
-            min-width: 480px;
-        }
-    }
+  /*
+  表示崩れ防止
+  ———————————*/
+  @media (max-width:720px) {
+      .global_nav {
+          min-width: 450px;
+          padding: 22px;
+      }
+  }
+
+  .logo {
+    width: 32%;
+  }
+
+  .logo > a {
+    display: block;
+    width: 100%;
+  }
+
+  .logo > a > img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
 
   .nav{
     width:calc(610 / 974.5 *100%);
@@ -146,13 +162,24 @@
     ———————————*/
     @media (max-width:720px) {
         .li::after/*liの間の縦線*/{   
-            display: none;
+          display: none;
         }
         .a {
-            font-size: 1.2rem;
+          font-size: 1.1rem;
+        }
+        .a:after/*ナビゲーションの下の文字*/{
+          font-size: 8px;
         }
     }
-}
+  }
+  /*
+  tablet
+  ———————————*/
+  @media (max-width:720px) {
+    .nav {
+      width: 64%;
+    }
+  }
 
   .h2{
     font-family:'ITC Avant Garde Gothic'; 
