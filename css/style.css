@@ -255,6 +255,9 @@ body {
   表示崩れ防止
   ———————————*/
   /*
+  表示崩れ防止
+  ———————————*/
+  /*
   tablet
   ———————————*/
 }
@@ -265,6 +268,9 @@ body {
   min-width: 700px;
   -ms-flex-pack: distribute;
   justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding-top: 22px;
   padding-bottom: 22px;
   position: absolute;
@@ -278,6 +284,9 @@ body {
 
 @media (max-width: 720px) {
   .main_img .global_nav {
+    -webkit-box-align: unset;
+        -ms-flex-align: unset;
+            align-items: unset;
     min-width: 450px;
     padding: 22px;
   }
@@ -285,6 +294,7 @@ body {
 
 .main_img .logo {
   width: 32%;
+  max-width: 200px;
 }
 
 .main_img .logo > a {
@@ -361,6 +371,9 @@ body {
   color: #777777;
   display: block;
   position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
   top: 110%;
   white-space: nowrap;
   /*改行させない*/
@@ -368,8 +381,6 @@ body {
 
 .main_img .nav .a1::after {
   content: '企業情報';
-  left: 3%;
-  /*それぞれ下文字の微調整*/
 }
 
 .main_img .nav .a2::after {
@@ -378,12 +389,10 @@ body {
 
 .main_img .nav .a3::after {
   content: 'サービス＆製品情報';
-  left: 15%;
 }
 
 .main_img .nav .a4::after {
   content: 'お問い合わせ';
-  left: 2%;
 }
 
 @media (max-width: 1024px) {
@@ -407,9 +416,16 @@ body {
   }
 }
 
+@media (max-width: 1024px) {
+  .main_img .nav {
+    top: -5px;
+  }
+}
+
 @media (max-width: 720px) {
   .main_img .nav {
     width: 64%;
+    top: unset;
   }
 }
 
