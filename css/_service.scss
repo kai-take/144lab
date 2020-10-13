@@ -18,6 +18,13 @@
     max-width: 100%;/*要素をはみ出さないため*/
   }
 
+  .service_img > img{
+    display: block;
+    width: 100%;
+    max-width: 100%;/*要素をはみ出さないため*/
+    height: auto;
+  }
+
   dl{
     justify-content: center;
     align-items: center;

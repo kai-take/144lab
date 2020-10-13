@@ -571,6 +571,14 @@ tablet
   /*要素をはみ出さないため*/
 }
 
+.service .service_img > img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  /*要素をはみ出さないため*/
+  height: auto;
+}
+
 .service dl {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
