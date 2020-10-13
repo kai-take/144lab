@@ -255,9 +255,6 @@ body {
   表示崩れ防止
   ———————————*/
   /*
-  表示崩れ防止
-  ———————————*/
-  /*
   tablet
   ———————————*/
 }
@@ -311,6 +308,7 @@ body {
 .main_img .nav {
   width: calc(610 / 974.5 *100%);
   position: relative;
+  top: -5px;
   margin-top: 5px;
   /*リストの微調整*/
   /*
@@ -413,12 +411,6 @@ body {
   }
   .main_img .nav .a:after {
     font-size: 8px;
-  }
-}
-
-@media (max-width: 1024px) {
-  .main_img .nav {
-    top: -5px;
   }
 }
 
@@ -636,6 +628,14 @@ tablet
   }
   .service .dd {
     width: 48%;
+    margin-left: 2%;
+  }
+  .service .reverse .dd {
+    margin-left: 0;
+    margin-right: 2%;
+  }
+  .service .service_text_center {
+    width: 97%;
   }
 }
 

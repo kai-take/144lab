@@ -80,6 +80,16 @@
 
     .dd{
       width: 48%;
+      margin-left: 2%;
+    }
+
+    .reverse .dd {
+      margin-left: 0;
+      margin-right: 2%;
+    }
+
+    .service_text_center/*中央寄せ*/{
+      width:97%;
     }
   }
 }

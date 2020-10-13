@@ -74,6 +74,7 @@
   .nav{
     width:calc(610 / 974.5 *100%);
     position: relative;
+    top: -5px;
     margin-top: 5px;/*リストの微調整*/
 
     .flex{
@@ -175,14 +176,7 @@
         }
     }
   }
-  /*
-  表示崩れ防止
-  ———————————*/
-  @media (max-width:1024px) {
-    .nav {
-      top: -5px;
-    }
-  }
+  
   /*
   tablet
   ———————————*/
